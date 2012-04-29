@@ -34,11 +34,13 @@ Form::openMultipart()
 =====================
 
 Crea una etiqueta de formulario multipart, este es ideal para formularios que contienen campos de subida de archivos:
+
 ::
 	$action acción a  la que envía los datos, por defecto llama la misma acción de donde proviene
 	$attrs atributos adicionales
 
 	Form::openMultipart ($action = NULL, $attrs = NULL)
+	
 ::
 	/*Ejemplo*/
 	echo Form::openMultipart();
