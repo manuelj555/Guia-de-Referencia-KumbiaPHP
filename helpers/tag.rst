@@ -13,7 +13,7 @@ Tag::css()
 
 Incluye un archivo CSS a la lista:
 ::
-  Tag::css('bienvenida');   //Pone en lista un CSS (app/public/css/bienvenida.css)
+  Tag::css('bienvenida');   //Pone en lista un CSS (public/css/bienvenida.css)
   echo Html::includeCss();  //Adiciona los recursos enlazados de la clase en el proyecto
 
 .. php:method:: Tag::css()
@@ -23,8 +23,8 @@ Tag::js()
 
 Incluye un archivo JavaScript a la vista, partial o template:
 ::
-  <?php 
-  echo Tag::js('jquery/jquery.kumbiaphp'); //Adiciona un archivo javascript (/app/public/javascript/jquery/jquery.kumbiaphp.js)
-  ?>
+
+  echo Tag::js('jquery/jquery.kumbiaphp'); 
+  //Adiciona un archivo javascript (/public/javascript/jquery/jquery.kumbiaphp.js)
 
 .. php:method:: Tag::js()
