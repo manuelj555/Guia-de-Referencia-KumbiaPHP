@@ -8,7 +8,7 @@ Clase para el manejo y la creación de formularios.
   
 Las funciones de esta clase son de tipo státicas, lo que nos permite usarlas directamente de la forma como se presentan a continuación.
 
-Form::open()
+open()
 ===========
 
 Crea una etiqueta de apertura de formulario <form method="post" action="...">
@@ -29,9 +29,9 @@ Crea una etiqueta de apertura de formulario <form method="post" action="...">
 	<?php echo Form::open('usuarios/nuevo'); ?> 
 	//inicia un formulario que enviara los datos al controller 'usuarios' y la acción 'nuevo'
 
-.. php:method:: Form::open()
+.. php:method:: open()
 
-Form::openMultipart()
+openMultipart()
 =====================
 
 Crea una etiqueta de formulario multipart, este es ideal para formularios que contienen campos de subida de archivos:
@@ -51,9 +51,9 @@ Crea una etiqueta de formulario multipart, este es ideal para formularios que co
 	echo Form::openMultipart('usuarios/nuevo');
 	//inicia un formulario multipart que enviara los datos al controller 'usuario' y la acción 'nuevo'
 
-.. php:method:: Form::openMultipart()
+.. php:method:: openMultipart()
 
-Form::close()
+close()
 =============
 
 Crea una etiqueta de cierre de formulario:
@@ -64,9 +64,9 @@ Crea una etiqueta de cierre de formulario:
 	echo Form::close();
 	//crea una etiqueta de cierre de formulario </form>
 
-.. php:method:: Form::close()
+.. php:method:: close()
 
-Form::input()
+input()
 =============
 
 Crea un campo de tipo input:
@@ -82,9 +82,9 @@ Crea un campo de tipo input:
 	/*Ejemplo*/
 	echo Form::input('nombre');
 
-.. php:method:: Form::input()
+.. php:method:: input()
 
-Form::text()
+text()
 ============
 
 Crea un campo de tipo input:
@@ -111,9 +111,9 @@ Siempre que se le da el parámetro name de la forma model.campo, es decir un nom
 	echo Form::text('nombre',"class= 'caja'",'55'); 
 	//crea un campo de tipo texto con el parámetro name= "nombre", id = "nombre", class= "caja", value = "55"
 
-.. php:method:: Form::text()
+.. php:method:: text()
 
-Form::pass()
+pass()
 ===========
 
 Crea un campo de tipo Password:
@@ -131,9 +131,9 @@ Crea un campo de tipo Password:
 	/*Ejemplo*/
 	echo Form::pass('password'); //crea un campo de tipo password con el parámetro name= "password"
 
-.. php:method:: Form::pass()
+.. php:method:: pass()
 
-Form::textarea()
+textarea()
 ================
 
 Crea un textarea:
@@ -148,9 +148,9 @@ Crea un textarea:
 
 	echo Form::textarea('detalles'); //Crea un textarea
 
-.. php:method:: Form::textarea()
+.. php:method:: textarea()
 
-Form::label()
+label()
 =============
 
 Crea un label y lo asocia a un campo:
@@ -168,9 +168,9 @@ Crea un label y lo asocia a un campo:
 	
 	echo Form::text('nombre');
 
-.. php:method:: Form::label()
+.. php:method:: label()
 
-Form::hidden()
+hidden()
 ==============
 
 Crea un campo hidden (campo oculto):
@@ -184,9 +184,9 @@ Crea un campo hidden (campo oculto):
 
 	echo Form::hidden( 'id', NULL, 12); //Crea un campo oculto con el name="id" y el value="12"
 
-.. php:method:: Form::hidden()
+.. php:method:: hidden()
 
-Form::dbSelect()
+dbSelect()
 ================
 
 Crea campo Select que toma los valores de objetos de ActiveRecord, para esta versión del framework el uso de este helper ha sido simplificado. Ya no es necesario instanciar el modelo.
@@ -206,9 +206,9 @@ Crea campo Select que toma los valores de objetos de ActiveRecord, para esta ver
 	echo Form::dbSelect('usuarios.campo_id'); //la forma más fácil, carga el modelo(campo) y muestra el primer campo después del pk(id)
 	echo Form::dbSelect('usuarios.campo_id', 'campo'); //muestra el campo y lo ordena ascendentemente 
 
-.. php:method:: Form::dbSelect()
+.. php:method:: dbSelect()
 
-Form::select()
+select()
 ==============
 
 Crea un campo Select (un combobox):
@@ -247,9 +247,9 @@ Crea un campo Select (un combobox):
 		[...]
 	</select>
 
-.. php:method:: Form::select()
+.. php:method:: select()
 
-Form::file()
+file()
 ============
 
 Crea campo File para subir archivos, el formulario se debe abrir con Form::openMultipart():
@@ -264,9 +264,9 @@ Crea campo File para subir archivos, el formulario se debe abrir con Form::openM
 	echo Form::file('subir'); crear el campo para subir archivos
 	echo Form::close(); //Cierra el formulario
 
-.. php:method:: Form::file()
+.. php:method:: file()
 	
-Form::button()
+button()
 =============
 
 Crea una etiqueta button:
@@ -280,9 +280,9 @@ Crea una etiqueta button:
 
 	echo Form::button('calcular'); //Crea un botón con el texto 'calcular'
 
-.. php:method:: Form::button()
+.. php:method:: button()
 
-Form::submitImage()
+submitImage()
 ==================
 
 Crea un botón de tipo imagen siguiendo las convenciones de KumbiaPHP, la imagen deberá estar dentro del directorio '/public/img/':
@@ -297,9 +297,9 @@ Crea un botón de tipo imagen siguiendo las convenciones de KumbiaPHP, la imagen
 	echo Form::submitImage('botones/edit.gif'); 
 	//Crea un botón con la imagen 'botones/edit.gif'
 
-.. php:method:: Form::submitImage()
+.. php:method:: submitImage()
 
-Form::submit()
+submit()
 ==============
 
 Crea un botón de submit para el formulario actual:
@@ -313,9 +313,9 @@ Crea un botón de submit para el formulario actual:
 
 	echo Form::submit('enviar'); //Crea un botón con el texto 'enviar'
 
-.. php:method:: Form::submit()
+.. php:method:: submit()
 	
-Form::reset()
+reset()
 =============
 
 Crea un botón reset para el formulario actual:
@@ -329,9 +329,9 @@ Crea un botón reset para el formulario actual:
 
 	echo Form::reset('reiniciar'); //Crea un botón con el texto 'reiniciar'
 
-.. php:method:: Form::reset()
+.. php:method:: reset()
 	
-Form::check()
+check()
 =============
 
 Crea un checkbox:
@@ -351,9 +351,9 @@ Crea un checkbox:
 	echo Form::check('recuerdame','1','',false); 
 	// Crea un check NO seleccionado con id="recuerdame" , name="recuerdame" y value="1"
 
-.. php:method:: Form::check()
+.. php:method:: check()
 
-Form::radio()
+radio()
 =============
 
 Crea un radio button:
@@ -374,4 +374,4 @@ Crea un radio button:
 	echo Form::radio("rdo", 'femenino'); 
 	//<input id="rdo2" name="rdo" type="radio" value="femenino">
 	
-.. php:method:: Form::radio()
+.. php:method:: radio()
