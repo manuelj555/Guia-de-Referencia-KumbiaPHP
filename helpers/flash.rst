@@ -2,37 +2,37 @@
 `Helper Flash <https://github.com/KumbiaPHP/KumbiaPHP/blob/master/core/extensions/helpers/flash.php>`_
 ##############
 
-Clase que permite hacer la salida de mensajes de error, advertencia, informativos y éxito de forma estándar.
+Clase que permite hacer la salida de mensajes de error, advertencia, informativos y ï¿½xito de forma estï¿½ndar.
 
 .. contents:: Metodos de la clase:
   
-Las funciones de esta clase son de tipo státicas, lo que nos permite usarlas directamente de la forma como se presentan a continuación.
+Las funciones de esta clase son de tipo stï¿½ticas, lo que nos permite usarlas directamente de la forma como se presentan a continuaciï¿½n.
 
-Flash::valid()
+valid()
 ===========
 
 Muestra un mensaje de exito en la pantalla.
 
 ::
 
-	$text texto que se mostrará en pantalla
+	$text texto que se mostrarï¿½ en pantalla
 	
 	Flash::valid($text)
 ::
 
 	/*Ejemplo*/ 
-	Flash::valid("Se creó el registro exitosamente...!!!")
+	Flash::valid("Se creï¿½ el registro exitosamente...!!!")
 
-.. php:method:: Flash::valid()
+.. php:method:: valid()
 
-Flash::info()
+info()
 ===========
 
-Muestra un mensaje de información en la pantalla.
+Muestra un mensaje de informaciï¿½n en la pantalla.
 
 ::
 
-	$text texto que se mostrará en pantalla
+	$text texto que se mostrarï¿½ en pantalla
 	
 	Flash::info($text)
 ::
@@ -40,33 +40,33 @@ Muestra un mensaje de información en la pantalla.
 	/*Ejemplo*/ 
 	Flash::info("Bienvenido al Sistema")
 
-.. php:method:: Flash::info()
+.. php:method:: info()
 
-Flash::warning()
+warning()
 ================
 
 Muestra un mensaje de advertencia en la pantalla.
 
 ::
 
-	$text texto que se mostrará en pantalla
+	$text texto que se mostrarï¿½ en pantalla
 	
 	Flash::warning($text)
 ::
 
 	/*Ejemplo*/ 
-	Flash::warning("La contraseña es muy corta...!!!")
+	Flash::warning("La contraseï¿½a es muy corta...!!!")
 
-.. php:method:: Flash::warning()
+.. php:method:: warning()
 
-Flash::error()
+error()
 ================
 
 Muestra un mensaje de error en la pantalla.
 
 ::
 
-	$text texto que se mostrará en pantalla
+	$text texto que se mostrarï¿½ en pantalla
 	
 	Flash::error($text)
 ::
@@ -74,9 +74,9 @@ Muestra un mensaje de error en la pantalla.
 	/*Ejemplo*/ 
 	Flash::error("Error: el campo usuario no puede ser Nulo...!!!")
 
-.. php:method:: Flash::error()
+.. php:method:: error()
 
-Flash::show()
+show()
 ================
 
 Muestra un mensaje Flash en la pantalla.
@@ -92,4 +92,4 @@ Muestra un mensaje Flash en la pantalla.
 	/*Ejemplo*/ 
 	Flash::show("error", "Error: el campo usuario no puede ser Nulo...!!!")
 
-.. php:method:: Flash::show()
+.. php:method:: show()
