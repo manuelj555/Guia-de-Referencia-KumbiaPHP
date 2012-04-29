@@ -52,7 +52,8 @@ Permite incluir un link:
 linkAction()
 ============
 
-Permite incluir un link:
+Permite incluir un link a una acción del controlador actual, con este metodo no hace falta escribir el nombre
+del controlador en la url (Tampoco es necesario el nombre del modulo, de estar en controlador dentro de uno):
 
 ::
 
