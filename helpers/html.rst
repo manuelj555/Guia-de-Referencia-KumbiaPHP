@@ -32,12 +32,14 @@ link()
 ============
 
 Permite incluir un link:
+
 ::
+
   $action ruta a la acción
   $text texto a mostrar
   $attrs atributos adicionales
 
-  Html::link ($action, $text, $attrs = NULL)
+  Html::link($action, $text, $attrs = NULL)
 
 ::
 
@@ -46,6 +48,27 @@ Permite incluir un link:
   //se muestra un link con el texto 'Configuración'
 
 .. php:method:: link()
+
+linkAction()
+============
+
+Permite incluir un link:
+
+::
+
+  $action ruta a la acción
+  $text texto a mostrar
+  $attrs atributos adicionales
+
+  Html::linkAction($action, $text, $attrs = NULL)
+
+::
+
+  /*Ejemplo*/
+  echo Html::linkAction('crear','Crear'); 
+  //crea un link a la acción crear del controlador actual , y muestra Crear en la etiqueta
+
+.. php:method:: linkAction()
 
 lists()
 =============
