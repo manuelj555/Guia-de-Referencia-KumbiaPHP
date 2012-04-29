@@ -8,7 +8,7 @@ Clase con métodos estáticos con la que podemos crear etiquetas HTML optimizada
 
 Las funciones de esta clase son de tipo státicas, lo que nos permite usarlas directamente de la forma como se presentan a continuación.  
 
-Html::img()
+img()
 ===========
 
 Permite incluir una imagen:
@@ -26,9 +26,9 @@ Permite incluir una imagen:
   //se muestra la imagen spin.gif que se encuentra dentro de "/public/img/"
   //con el artibuto alt 'una imagen'
 
-.. php:method:: Html::img()
+.. php:method:: img()
 
-Html::link()
+link()
 ============
 
 Permite incluir un link:
@@ -45,9 +45,9 @@ Permite incluir un link:
   echo Html::link('pages/show/kumbia/status','Configuración'); 
   //se muestra un link con el texto 'Configuración'
 
-.. php:method:: Html::link()
+.. php:method:: link()
 
-Html::lists()
+lists()
 =============
 
 Crea una lista html a partir de un array:
@@ -70,9 +70,9 @@ Crea una lista html a partir de un array:
   $ar2 = array('Abdomen','Brazos','Cabeza','Cuello','Genitales','Piernas','Tórax','Otros');
   echo Html::lists($ar2, $type = 'ol'); //Muestra una lista <ol></ol>
 
-.. php:method:: Html::lists()
+.. php:method:: lists()
 
-Html::gravatar()
+gravatar()
 ================
 
 Incluye imágenes de gravatar.com:
@@ -89,9 +89,9 @@ Incluye imágenes de gravatar.com:
   echo Html::link( Html::gravatar($email), $url); // Un gravatar que es un link
   echo Html::gravatar( $email, $name, 20, 'http://www.example.com/default.jpg'); //Completo
 
-.. php:method:: Html::gravatar()
+.. php:method:: gravatar()
 
-Html::includeCss()
+includeCss()
 ==================
 
 Incluye los archivos CSS que previamente fueron cargados a la lista mediante Tag::css():
@@ -101,9 +101,9 @@ Incluye los archivos CSS que previamente fueron cargados a la lista mediante Tag
   Tag::css('bienvenida');    //Pone en lista un CSS (app/public/css/bienvenida.css)
   echo Html::includeCss();  //Adiciona los recursos enlazados de la clase en el proyecto
 
-.. php:method:: Html::includeCss()
+.. php:method:: includeCss()
 
-Html::meta()
+meta()
 ============
 
 Crea un metatag y lo agrega a una lista estática que será añadida más adelante mediante Html::includeMetatags();
@@ -120,9 +120,9 @@ Crea un metatag y lo agrega a una lista estática que será añadida más adelan
   Html::meta('text/html; charset=UTF-8',"http-equiv = 'Content-type'"); 
   //Agrega: <meta content="text/html; charset=UTF-8" http-equiv = 'Content-type' />
 
-.. php:method:: Html::meta()
+.. php:method:: meta()
 
-Html::includeMetatags()
+includeMetatags()
 =======================
 
 Agrega los metatag que previamente se habían agregado:
@@ -133,9 +133,9 @@ Agrega los metatag que previamente se habían agregado:
   Html::meta('text/html; charset=UTF-8',"http-equiv = 'Content-type'");
   echo Html::includeMetatags(); //Visualiza <meta content="Kumbiaphp-team" name = 'Author'/>
 
-.. php:method:: Html::includeMetatags()
+.. php:method:: includeMetatags()
 
-Html::headLink()
+headLink()
 ================
 
 Agrega un elemento de vinculo externo de tipo <link> a la cola de enlaces (para poder ser visualizado se requiere de Html::includeHeadLinks() de modo similar que Html::includeCss())
@@ -159,9 +159,9 @@ Agrega un elemento de vinculo externo de tipo <link> a la cola de enlaces (para 
    
   echo Html::includeHeadLinks(); //Muestra los links que contiene la cola
 
-.. php:method:: Html::headLink()
+.. php:method:: headLink()
  
-Html::headLinkAction()
+headLinkAction()
 ======================
 
 Agrega un elemento de vinculo interno de tipo <link> a la cola de enlaces (para poder ser visualizado se requiere de Html::includeHeadLinks() de modo similar que Html::includeCss()) respetando las convenciones de KumbiaPHP.
@@ -182,9 +182,9 @@ Agrega un elemento de vinculo interno de tipo <link> a la cola de enlaces (para 
    
   echo Html::includeHeadLinks(); //Muestra los links que contiene la cola
 
-.. php:method:: Html::headLinkAction()
+.. php:method:: headLinkAction()
 
-Html::headLinkResource()
+headLinkResource()
 =======================
 
 Agrega un elemento de vinculo a un recurso interno con la etiqueta <link> a la cola de enlaces (para poder ser visualizado se requiere de Html::includeHeadLinks())
@@ -201,9 +201,9 @@ Agrega un elemento de vinculo a un recurso interno con la etiqueta <link> a la c
    
   echo Html::includeHeadLinks(); //Muestra los links que contiene la cola
 
-.. php:method:: Html::headLinkResource()
+.. php:method:: headLinkResource()
 
-Html::includeHeadLinks()
+includeHeadLinks()
 ========================
 
 Incluye los links que previamente se pusieron en cola:
@@ -215,4 +215,4 @@ Incluye los links que previamente se pusieron en cola:
   Html::headLinkAction('articulos/feed', "rel='alternate' type='application/rss+xml' title='KumbiaPHP Framework RSS Feed'");
   echo Html::includeHeadLinks();
 
-.. php:method:: Html::includeHeadLinks()
+.. php:method:: includeHeadLinks()
