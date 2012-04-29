@@ -72,6 +72,7 @@ input()
 Crea un campo de tipo input:
 
 ::
+
 	$attrs atributos para el tag
 	$content contenido interno
 
@@ -176,6 +177,7 @@ hidden()
 Crea un campo hidden (campo oculto):
 
 ::
+
 	$field nombre de campo
 	$attrs atributos adicionales de campo
 	$value valor inicial para el campo oculto
@@ -255,6 +257,7 @@ file()
 Crea campo File para subir archivos, el formulario se debe abrir con Form::openMultipart():
 
 ::
+
 	$field nombre de campo
 	$attrs atributos de campo
 
