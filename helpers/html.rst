@@ -5,7 +5,8 @@ Helper Html
 Clase con métodos estáticos con la que podemos crear etiquetas HTML optimizadas respetando las convenciones de KumbiaPHP.
 
 .. contents:: Metodos de la clase:
-  
+
+Las funciones de esta clase son de tipo státicas, lo que nos permite usarlas directamente de la forma como se presentan a continuación.  
 
 Html::img()
 ===========
