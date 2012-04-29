@@ -1,5 +1,5 @@
 ############
-Helper Tag
+`Helper Tag <https://github.com/KumbiaPHP/KumbiaPHP/blob/master/core/extensions/helpers/tag.php>`_
 ############
 
 Esta clase nos va a permitir adicionar archivos JS y CSS a nuestro proyecto, bien sean archivos que se encuentren en nuestro servidor o en un servidor externo.

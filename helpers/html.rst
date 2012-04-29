@@ -1,5 +1,5 @@
 ############
-Helper Html
+`Helper Html <https://github.com/KumbiaPHP/KumbiaPHP/blob/master/core/extensions/helpers/html.php>`_
 ############
 
 Clase con métodos estáticos con la que podemos crear etiquetas HTML optimizadas respetando las convenciones de KumbiaPHP.
