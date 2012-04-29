@@ -75,3 +75,21 @@ Muestra un mensaje de error en la pantalla.
 	Flash::error("Error: el campo usuario no puede ser Nulo...!!!")
 
 .. php:method:: Flash::error()
+
+Flash::show()
+================
+
+Muestra un mensaje Flash en la pantalla.
+
+::
+
+	$name	Tipo de mensaje y clase tendra para el CSS class='$name'.
+	$text 	Mensaje a mostrar
+	
+	Flash::show($name, $text)
+::
+
+	/*Ejemplo*/ 
+	Flash::show("error", "Error: el campo usuario no puede ser Nulo...!!!")
+
+.. php:method:: Flash::show()
