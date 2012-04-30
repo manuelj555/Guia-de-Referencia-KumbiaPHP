@@ -16,4 +16,5 @@ Si deseas colaborar en la elaboración de la guia, deja un comentario en los ISS
 
 Tambien puedes notificarlo por el foro de KumbiaPHP http://foro.kumbiaphp.com/
 
-ó Por el twitter https://twitter.com/#!/KumbiaPHP
+Ó Por el twitter https://twitter.com/#!/KumbiaPHP
+
