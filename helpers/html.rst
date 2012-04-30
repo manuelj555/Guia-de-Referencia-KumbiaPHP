@@ -89,10 +89,10 @@ Crea una lista html a partir de un array:
   'Genitales' => 'Genitales', 'Piernas' => 'Piernas', 'Tórax' => 'Tórax', 'Otros' => 'Otros');
 
   //$ar el array que contiene los items de la lista
-  echo Html::lists($ar, $type = 'ol'); //Muestra una lista <ol></ol>
+  echo Html::lists($ar, 'ol'); //Muestra una lista <ol></ol>
   
   $ar2 = array('Abdomen','Brazos','Cabeza','Cuello','Genitales','Piernas','Tórax','Otros');
-  echo Html::lists($ar2, $type = 'ol'); //Muestra una lista <ol></ol>
+  echo Html::lists($ar2, 'ol'); //Muestra una lista <ol></ol>
 
 .. php:method:: lists()
 
