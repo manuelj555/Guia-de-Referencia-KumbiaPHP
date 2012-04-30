@@ -2,11 +2,11 @@
 `Helper Flash <https://github.com/KumbiaPHP/KumbiaPHP/blob/master/core/extensions/helpers/flash.php>`_
 ##############
 
-Clase que permite hacer la salida de mensajes de error, advertencia, informativos y �xito de forma est�ndar.
+Clase que permite hacer la salida de mensajes de error, advertencia, informativos y éxito de forma estándar.
 
 .. contents:: Metodos de la clase:
   
-Las funciones de esta clase son de tipo st�ticas, lo que nos permite usarlas directamente de la forma como se presentan a continuaci�n.
+Las funciones de esta clase son de tipo státicas, lo que nos permite usarlas directamente de la forma como se presentan a continuaci�n.
 
 valid()
 ===========
@@ -15,24 +15,24 @@ Muestra un mensaje de exito en la pantalla.
 
 ::
 
-	$text texto que se mostrar� en pantalla
+	$text texto que se mostrará en pantalla
 	
 	Flash::valid($text)
 ::
 
 	/*Ejemplo*/ 
-	Flash::valid("Se cre� el registro exitosamente...!!!")
+	Flash::valid("Se creó el registro exitosamente...!!!")
 
 .. php:method:: valid()
 
 info()
 ===========
 
-Muestra un mensaje de informaci�n en la pantalla.
+Muestra un mensaje de información en la pantalla.
 
 ::
 
-	$text texto que se mostrar� en pantalla
+	$text texto que se mostrará en pantalla
 	
 	Flash::info($text)
 ::
@@ -49,13 +49,13 @@ Muestra un mensaje de advertencia en la pantalla.
 
 ::
 
-	$text texto que se mostrar� en pantalla
+	$text texto que se mostrará en pantalla
 	
 	Flash::warning($text)
 ::
 
 	/*Ejemplo*/ 
-	Flash::warning("La contrase�a es muy corta...!!!")
+	Flash::warning("La contraseña es muy corta...!!!")
 
 .. php:method:: warning()
 
@@ -66,7 +66,7 @@ Muestra un mensaje de error en la pantalla.
 
 ::
 
-	$text texto que se mostrar� en pantalla
+	$text texto que se mostrará en pantalla
 	
 	Flash::error($text)
 ::
