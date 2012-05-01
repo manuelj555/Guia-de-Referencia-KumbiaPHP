@@ -6,7 +6,7 @@ Clase que permite crear etiquetas html (links, select, entre otros) que funciona
 
 .. contents:: Metodos de la clase:
   
-Las funciones de esta clase son de tipo státicas, lo que nos permite usarlas directamente de la forma como se presentan a continuaci?n.
+Las funciones de esta clase son de tipo estáticas, lo que nos permite usarlas directamente de la forma como se presentan a continuación.
 
 link()
 ====
