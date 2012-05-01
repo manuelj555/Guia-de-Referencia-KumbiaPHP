@@ -11,6 +11,10 @@ Helpers:
 - `Html <./helpers/html.rst>`_
 - `Tag <./helpers/tag.rst>`_
 
+Librerias:
+
+-`Session <./libs/session.rst>`_
+
 Información
 ===========
 
