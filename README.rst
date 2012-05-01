@@ -13,7 +13,7 @@ Helpers:
 
 Librerias:
 
--`Session <./libs/session.rst>`_
+- `Session <./libs/session.rst>`_
 
 Información
 ===========
