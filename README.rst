@@ -4,9 +4,11 @@ Guia rápida del uso de KumbiaPHP
 
 Helpers:
 
+- `Ajax <./helpers/ajax.rst>`_
 - `Flash <./helpers/flash.rst>`_
-- `Html <./helpers/html.rst>`_
 - `Form <./helpers/form.rst>`_
+- `Js <./helpers/js.rst>`_
+- `Html <./helpers/html.rst>`_
 - `Tag <./helpers/tag.rst>`_
 
 Información
